@@ -1,0 +1,82 @@
+---
+title: "Electrical System Calculator"
+sidebarTitle: "Electrical Calculator"
+description: "Documentation for the Emery Custom Builds electrical system sizing calculator — how to use it, what it calculates, and how to interpret results."
+---
+
+# Electrical System Calculator
+
+Our electrical system sizing calculator helps you figure out what you actually need for your van build — battery capacity, solar panel wattage, and charging requirements based on your specific devices and usage.
+
+## What It Does
+
+The calculator takes your list of electrical devices (with wattage and daily usage hours) and tells you:
+
+- **Daily power consumption** in amp-hours (Ah) and watt-hours (Wh)
+- **Recommended battery bank size** based on your desired days of autonomy
+- **Solar panel wattage** needed to replenish daily consumption
+- **Charging time estimates** from solar, alternator, and shore power
+
+## How to Use It
+
+### 1. List Your Devices
+Enter each electrical device you plan to run in your van. For each device, you'll need:
+- **Device name** (e.g., "Fridge," "LED Lights")
+- **Wattage** (check the device's label or spec sheet)
+- **Hours per day** (estimate average daily use)
+
+### 2. Set Your Parameters
+- **Battery type:** Lithium (LiFePO4) or lead-acid — this affects depth of discharge calculations
+- **Days of autonomy:** How many days you want to run without any charging (1–3 is typical)
+- **Location:** Affects solar estimate based on average peak sun hours
+
+### 3. Review Results
+The calculator produces a recommended system spec based on your inputs. This is a starting point — real-world conditions (weather, shade, driving habits) affect actual performance.
+
+## Common Device Wattages
+
+If you're not sure what wattage to enter, here are typical values:
+
+| Device | Typical Wattage | Notes |
+|--------|----------------|-------|
+| LED lights (all) | 15–25W | Total for all lights on at once |
+| Compressor fridge | 40–60W | Cycles on/off; actual draw averages ~50% of rated |
+| MaxxAir fan | 5–20W | Depends on speed setting |
+| Phone charging | 10–15W | Per device |
+| Laptop | 45–65W | While in use; less when sleeping |
+| Water pump | 50–70W | Only runs when faucet is open |
+| Diesel heater | 10–30W | Electrical draw for fan and glow plug (fuel is separate) |
+| Inverter (idle) | 10–20W | Standby draw when inverter is on but nothing is plugged in |
+| Induction cooktop | 1000–1800W | High draw; only runs during cooking |
+| Coffee maker (12V) | 100–200W | Short duration |
+
+**Tip:** For devices that cycle (like a fridge), use about 50% of the rated wattage for your hourly estimate. A 60W fridge doesn't run 60W continuously — the compressor kicks on and off.
+
+## Interpreting Results
+
+### Battery Capacity
+The calculator recommends a minimum battery bank size. Always round up to the nearest standard battery size (100Ah, 200Ah, 300Ah). It's better to have slightly more capacity than slightly less.
+
+### Solar Wattage
+Solar recommendations assume average conditions for your location. If you camp in heavy shade or travel to less sunny regions, consider sizing up by 25–50%.
+
+### The 80/20 Rule
+In most builds, 80% of your power consumption comes from just 2–3 devices — usually the fridge, lights, and fan. Focus on getting those numbers accurate. The small stuff (phone charging, occasional appliance use) is rounding error.
+
+## Limitations
+
+This calculator gives you a solid starting point, but it's not a substitute for a professional system design. Factors it can't account for:
+
+- Your specific driving patterns (affects alternator charging)
+- Exact solar panel positioning and shading on your particular van
+- Temperature effects on battery performance
+- Simultaneous high-draw devices and inverter efficiency losses
+
+For a system designed specifically for your van and your use case, talk to us.
+
+## Learn More
+
+- [System Sizing Guide](/docs/electrical/system-sizing) — The full manual calculation walkthrough
+- [Solar Power Guide](/docs/electrical/solar-guide) — Solar panel details
+- [Battery Bank Design](/docs/electrical/battery-bank) — Battery selection and sizing
+- [Get a custom electrical design →](https://emerycustombuilds.com/contact)

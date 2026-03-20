@@ -1,0 +1,96 @@
+---
+title: "Solar Power Guide"
+sidebarTitle: "Solar Power"
+description: "How to size, select, and install solar panels on a camper van — panel types, charge controllers, wiring configurations, and real-world output expectations."
+---
+
+# Solar Power Guide for Van Builds
+
+Solar is the primary off-grid charging source for most van builds. Get the sizing and installation right, and you can camp indefinitely without plugging in. This guide covers what you need to know.
+
+## Panel Types
+
+### Monocrystalline (Recommended)
+Most efficient panels available. They produce more power per square foot, which matters when roof space is limited. This is what we use on all builds.
+
+### Polycrystalline
+Slightly cheaper, slightly less efficient. The savings aren't worth the efficiency trade-off on a van where space is at a premium.
+
+### Flexible Panels
+Thin, lightweight panels that conform to curved surfaces. They look clean and don't add height, but they run hotter (less efficient) and have shorter lifespans than rigid panels. Acceptable for basic builds; not ideal for anything Standard tier and up.
+
+## How Much Solar Do You Need?
+
+This depends entirely on your power consumption. See the [System Sizing Guide](/docs/electrical/system-sizing) for the full calculation, but here's the short version:
+
+**Rule of thumb:** 100W of solar produces roughly 30–40 Ah per day in Southern California (4–5 peak sun hours). Less in winter, more in summer. Less in the Pacific Northwest, more in the desert Southwest.
+
+### Solar by Build Tier
+
+| Tier | Solar Capacity | Typical Setup |
+|------|---------------|---------------|
+| Basic | 200–400W | 1–2 rigid panels |
+| Standard | 400–800W | 2–4 rigid panels |
+| Premium | 800–1200W+ | 4–6+ rigid panels, possibly ground-deploy |
+
+## Charge Controllers: MPPT vs. PWM
+
+The charge controller sits between your panels and batteries. It regulates the charging voltage and current.
+
+**MPPT (Maximum Power Point Tracking)** — More expensive, but 15–30% more efficient than PWM. Converts excess voltage into additional current, squeezing more energy from your panels. Worth it on every build.
+
+**PWM (Pulse Width Modulation)** — Cheaper, simpler, less efficient. Only makes sense on very small systems (under 200W) where the cost difference matters more than the efficiency loss.
+
+We use MPPT controllers on every build. The Victron SmartSolar line is our go-to — reliable, Bluetooth monitoring, and good support.
+
+## Wiring Configuration: Series vs. Parallel
+
+### Series
+Panels wired in series **add voltage** while amperage stays the same. Higher voltage means less current through the wires, which means you can use thinner wire on long runs.
+
+- **Pros:** Thinner wire, less voltage drop on long runs
+- **Cons:** If one panel is shaded, the whole string's output drops
+- **Best for:** Builds with 3+ panels and an MPPT controller
+
+### Parallel
+Panels wired in parallel **add amperage** while voltage stays the same. Each panel operates independently, so shading on one doesn't kill the others.
+
+- **Pros:** Shade tolerance — one shaded panel doesn't drag down the rest
+- **Cons:** Higher current = thicker wire needed
+- **Best for:** Builds where partial shading is common (parked near trees, buildings)
+
+### Series-Parallel (Hybrid)
+For larger arrays (4+ panels), you can wire pairs in series, then wire those pairs in parallel. This balances voltage, current, and shade tolerance. It's what we typically do on Premium builds.
+
+## Mounting
+
+### Roof-Mounted (Standard)
+Panels bolt to the roof using brackets or a roof rack. This is the most common setup — panels are always deployed, always charging.
+
+- Use Z-brackets or tilt mounts for rigid panels
+- Leave at least 1–2" of air gap between panel and roof for ventilation (panels lose efficiency when hot)
+- Route wiring through a weatherproof cable gland — not through an open hole sealed with caulk
+
+### Ground-Deploy (Optional Add-On)
+Portable panels you can set up on the ground, angled toward the sun. This lets you park in the shade while your panels sit in direct sunlight. Popular for extended boondocking.
+
+## Real-World Expectations
+
+Solar output varies. Here's what to actually expect:
+
+| Factor | Impact |
+|--------|--------|
+| Cloud cover | 50–80% reduction |
+| Panel temperature | 10–25% reduction on hot days |
+| Shade (trees, buildings) | Up to 90% reduction (especially in series wiring) |
+| Panel angle | Flat-mounted loses 10–20% vs. optimal angle |
+| Season | Winter = 40–60% of summer output |
+
+**Don't size your system for best-case.** Size it for average conditions with room for bad days. If you're in Southern California, you have more margin. If you're chasing winter in the PNW, size up.
+
+## Next Steps
+
+- [System Sizing Guide](/docs/electrical/system-sizing) — Full calculation walkthrough
+- [Battery Bank Design](/docs/electrical/battery-bank) — Match your storage to your solar
+- [Electrical Overview](/docs/electrical/overview) — How everything connects
+- [Get a custom solar design →](https://emerycustombuilds.com/contact)

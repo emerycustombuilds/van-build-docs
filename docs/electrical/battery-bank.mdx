@@ -1,0 +1,110 @@
+---
+title: "Battery Bank Design"
+sidebarTitle: "Battery Banks"
+description: "How to choose and size a battery bank for a camper van — lithium vs. lead-acid, capacity planning, series vs. parallel, and what we actually install."
+---
+
+# Battery Bank Design for Van Builds
+
+Your battery bank is where all your energy lives. It stores power from solar, alternator charging, and shore power, then delivers it to everything in your van. The battery decision affects your budget, weight, available space, and how long you can stay off-grid.
+
+## Lithium vs. Lead-Acid
+
+### Lithium Iron Phosphate (LiFePO4) — Recommended
+This is the standard for quality van builds, and it's what we install on every build.
+
+**Why lithium wins:**
+- **Usable capacity:** You can safely use 80–90% of a lithium battery's rated capacity. A 200Ah lithium battery gives you ~160–180Ah of usable power.
+- **Weight:** About half the weight of equivalent lead-acid. That matters in a van.
+- **Lifespan:** 3,000–5,000 cycles vs. 300–500 for lead-acid. A lithium bank lasts 8–10+ years with normal use.
+- **Charge speed:** Accepts higher charge rates, so solar and alternator charging is more effective.
+- **Flat discharge curve:** Voltage stays consistent until the battery is nearly empty. Your devices run at full performance throughout the discharge cycle.
+
+**The trade-off:** Higher upfront cost. A quality 200Ah lithium battery runs $800–$1,200. But the total cost of ownership over its lifespan is lower than lead-acid.
+
+### Lead-Acid (AGM / Gel)
+Cheaper upfront, but worse in nearly every other metric.
+
+- **Usable capacity:** Only 50% — a 200Ah lead-acid battery gives you ~100Ah before you start damaging it.
+- **Weight:** Roughly double lithium for the same usable capacity.
+- **Lifespan:** 300–500 cycles if you're careful about depth of discharge.
+- **Charge speed:** Slower, especially the absorption phase (last 20% takes a long time).
+
+Lead-acid can make sense for very basic builds on a tight budget where the van isn't used heavily. For anything Standard tier and up, lithium is the move.
+
+## Sizing Your Battery Bank
+
+The sizing calculation is straightforward:
+
+1. **Calculate daily consumption** (see [System Sizing Guide](/docs/electrical/system-sizing))
+2. **Decide on autonomy** — how many days you want to go without any charging (1–3 days is typical)
+3. **Factor in depth of discharge**
+
+**Formula:** Daily Ah × Days of Autonomy ÷ Depth of Discharge = Battery Capacity
+
+### Example
+- Daily consumption: 70 Ah
+- Autonomy: 2 days
+- Lithium DoD: 80%
+
+70 × 2 ÷ 0.80 = **175 Ah** → a 200Ah bank is the right call.
+
+### Capacity by Tier
+
+| Tier | Typical Battery Bank | Why |
+|------|---------------------|-----|
+| Basic | 100–200Ah lithium | Covers lights, fan, phone charging, small fridge |
+| Standard | 200–400Ah lithium | Full vanlife use — fridge, laptop, water pump, lights, fan |
+| Premium | 400–600Ah+ lithium | Heavy use — AC, induction cooktop, washer, extended boondocking |
+
+## Series vs. Parallel
+
+### Parallel (12V System)
+Most van builds run a 12V battery bank. If you need more capacity, you wire identical batteries in **parallel** — this adds amp-hours while keeping voltage at 12V.
+
+- Two 100Ah batteries in parallel = 200Ah at 12V
+- Three 100Ah batteries in parallel = 300Ah at 12V
+
+**Rule:** Only parallel identical batteries (same brand, model, age, and capacity).
+
+### Series (24V or 48V System)
+Some premium builds use a 24V or 48V system for efficiency. Wiring batteries in **series** adds voltage while keeping amp-hours the same.
+
+- Two 12V 200Ah batteries in series = 200Ah at 24V
+
+Higher voltage means less current for the same wattage, which means thinner wires and less heat. But it requires a 24V-compatible inverter and charge controller. This is a premium-build consideration.
+
+## Battery Management System (BMS)
+
+Every lithium battery should have a built-in BMS (most quality batteries do). The BMS protects the battery from:
+
+- Over-discharge (cuts off power before voltage drops too low)
+- Over-charge (stops charging when full)
+- Over-current (disconnects if too much current flows)
+- Temperature extremes (shuts down in extreme cold or heat)
+
+Don't buy lithium batteries without a BMS. And don't buy the cheapest no-name lithium off Amazon — a battery failure in a van is a safety issue.
+
+## What We Install
+
+Our go-to brands for van builds:
+
+- **Victron** — Premium option. Excellent BMS, Bluetooth monitoring, great integration with Victron charge controllers and inverters.
+- **Battle Born** — Solid U.S.-based option with strong warranty and good support.
+- **SOK / Ampere Time** — Good budget-friendly lithium options for Basic tier builds.
+
+The brand matters less than getting a reputable product with a real BMS and a warranty you can actually use.
+
+## Placement & Ventilation
+
+- Mount batteries securely — they're heavy and must not shift in transit
+- Lithium batteries can be installed in any orientation (unlike flooded lead-acid)
+- Keep batteries in a temperature-controlled area if possible (under the bed platform is common)
+- Ensure ventilation for heat dissipation, even though lithium doesn't off-gas like lead-acid
+
+## Next Steps
+
+- [System Sizing Guide](/docs/electrical/system-sizing) — Calculate your actual power needs
+- [Solar Power Guide](/docs/electrical/solar-guide) — Size your solar to match your bank
+- [Electrical Overview](/docs/electrical/overview) — How everything connects
+- [Talk to us about your battery setup →](https://emerycustombuilds.com/contact)

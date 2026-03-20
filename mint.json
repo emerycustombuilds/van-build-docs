@@ -1,0 +1,80 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "Emery Custom Builds — Van Build Docs",
+  "logo": {
+    "dark": "/logo/ecb-logo-dark.png",
+    "light": "/logo/ecb-logo-light.png"
+  },
+  "favicon": "/favicon.ico",
+  "colors": {
+    "primary": "#DCA54A",
+    "light": "#FAF5E5",
+    "dark": "#0F172A",
+    "anchors": {
+      "from": "#DCA54A",
+      "to": "#D09A40"
+    }
+  },
+  "topbarCtaButton": {
+    "name": "Get a Quote",
+    "url": "https://emerycustombuilds.com/contact"
+  },
+  "anchors": [
+    {
+      "name": "Main Site",
+      "icon": "globe",
+      "url": "https://emerycustombuilds.com"
+    },
+    {
+      "name": "Instagram",
+      "icon": "instagram",
+      "url": "https://www.instagram.com/emerycustombuilds/"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "Getting Started",
+      "pages": [
+        "docs/introduction",
+        "docs/getting-started"
+      ]
+    },
+    {
+      "group": "Electrical Systems",
+      "pages": [
+        "docs/electrical/overview",
+        "docs/electrical/system-sizing",
+        "docs/electrical/solar-guide",
+        "docs/electrical/battery-bank"
+      ]
+    },
+    {
+      "group": "Plumbing & Water",
+      "pages": [
+        "docs/plumbing/overview",
+        "docs/plumbing/water-systems",
+        "docs/plumbing/sizing"
+      ]
+    },
+    {
+      "group": "Build Process",
+      "pages": [
+        "docs/build-process/overview",
+        "docs/build-process/budgeting",
+        "docs/build-process/timeline"
+      ]
+    },
+    {
+      "group": "Tools & Resources",
+      "pages": [
+        "docs/tools/electrical-calculator"
+      ]
+    }
+  ],
+  "footerSocials": {
+    "instagram": "https://www.instagram.com/emerycustombuilds/",
+    "facebook": "https://www.facebook.com/EmeryCustomBuilds",
+    "youtube": "https://youtube.com/@emerycustombuilds",
+    "linkedin": "https://linkedin.com/company/emery-custom-builds"
+  }
+}

@@ -1,0 +1,110 @@
+---
+title: "Electrical System Sizing Guide"
+sidebarTitle: "System Sizing"
+description: "How to calculate your van's electrical system needs — daily power consumption, battery capacity, solar panel sizing, and wire gauge selection."
+---
+
+# Electrical System Sizing Guide
+
+Sizing a van electrical system comes down to answering one question: **how much power do you use in a day, and how will you replace it?**
+
+Get this right and your system runs smoothly. Get it wrong and you're constantly running out of power or spending money on capacity you don't need.
+
+## Step 1: Calculate Daily Power Consumption
+
+List every electrical device you'll use and estimate how many hours per day each runs. Then calculate amp-hours (Ah) for each.
+
+**Formula:** Watts ÷ Voltage = Amps. Amps × Hours = Amp-Hours (Ah)
+
+### Example Load Calculation
+
+| Device | Watts | Hours/Day | Daily Ah (at 12V) |
+|--------|-------|-----------|-------------------|
+| LED lights | 20W | 5h | 8.3 Ah |
+| Fridge (compressor) | 45W | 12h (cycling) | 22.5 Ah |
+| Vent fan (MaxxAir) | 15W | 8h | 10 Ah |
+| Phone charging | 15W | 3h | 3.75 Ah |
+| Laptop | 60W | 4h | 20 Ah |
+| Water pump | 60W | 0.5h | 2.5 Ah |
+| **Total** | | | **67 Ah/day** |
+
+Your total daily consumption is your baseline number. Everything else is sized from this.
+
+## Step 2: Size Your Battery Bank
+
+You don't want to drain your batteries to zero — that kills their lifespan (even lithium). A safe depth of discharge for lithium (LiFePO4) batteries is around 80%. Lead-acid should only go to 50%.
+
+**Formula:** Daily Ah ÷ Depth of Discharge = Minimum Battery Capacity
+
+Using the example above:
+- **Lithium:** 67 Ah ÷ 0.80 = **84 Ah minimum**
+- **Lead-acid:** 67 Ah ÷ 0.50 = **134 Ah minimum**
+
+Now add a buffer. You want at least 1.5–2 days of autonomy (for cloudy days, heavy use days, or when you're not driving).
+
+- **Lithium (2 days autonomy):** 67 × 2 ÷ 0.80 = **168 Ah** → a 200Ah battery bank is your sweet spot
+- **Lead-acid (2 days autonomy):** 67 × 2 ÷ 0.50 = **268 Ah** → two 6V golf cart batteries in series, or similar
+
+[More on batteries: Battery Bank Design →](/docs/electrical/battery-bank)
+
+## Step 3: Size Your Solar Array
+
+Solar panels need to replace what you use each day. But panels don't produce their rated wattage all day — real-world output depends on climate, angle, shade, and season.
+
+**Rule of thumb:** In Southern California, a rooftop panel produces roughly **4–5 peak sun hours** per day on average. In the Pacific Northwest or winter months, that drops to 2–3.
+
+**Formula:** Daily Ah × Battery Voltage ÷ Peak Sun Hours ÷ System Efficiency (0.85) = Minimum Solar Watts
+
+Using the example (67 Ah/day):
+- 67 Ah × 12V = 804 Wh/day
+- 804 ÷ 4.5 sun hours ÷ 0.85 efficiency = **210W minimum**
+
+So a 200–300W solar setup covers this load in good conditions. For margin and cloudy days, bump to 300–400W.
+
+[More on solar: Solar Power Guide →](/docs/electrical/solar-guide)
+
+## Step 4: Alternator Charging
+
+Don't forget — your van's alternator is a charging source too. A DC-DC charger (like a Victron Orion) pulls power from the alternator while you drive and feeds it to your house batteries.
+
+A 30A DC-DC charger puts about 30Ah per hour of driving into your batteries. If you drive 2 hours, that's 60Ah — nearly a full day's consumption for the example above.
+
+For people who drive regularly, alternator charging can be your primary power source, with solar as backup. For people who stay parked for days, solar becomes more critical.
+
+## Step 5: Wire Sizing
+
+Wire gauge depends on two things: **current (amps)** and **wire length (round trip distance)**.
+
+Higher current = thicker wire. Longer distance = thicker wire. The goal is to keep voltage drop under 3% on any run.
+
+### Quick Reference: Common Wire Gauges
+
+| Circuit | Typical Current | Recommended Gauge (up to 10ft) |
+|---------|----------------|-------------------------------|
+| LED lights | 2–5A | 14 AWG |
+| Vent fan | 2–3A | 14 AWG |
+| Fridge | 5–8A | 12 AWG |
+| Water pump | 5–10A | 12 AWG |
+| Inverter (2000W) | 170A+ | 2/0 AWG |
+| Battery to bus bar | 100A+ | 4–2/0 AWG |
+
+**Always** oversize slightly if you're between gauges. Thicker wire is safer and has less voltage drop. It's cheap insurance.
+
+## Putting It Together
+
+For the example 67 Ah/day system:
+
+| Component | Spec |
+|-----------|------|
+| Battery bank | 200Ah lithium (LiFePO4) |
+| Solar | 300W (2× 150W panels) |
+| Charge controller | 30A MPPT |
+| DC-DC charger | 30A |
+| Inverter | 1000–2000W pure sine |
+| Shore power charger | 20A (optional) |
+
+This is a solid Standard-tier electrical setup. It handles daily vanlife use comfortably — fridge, lights, fans, phone charging, laptop, water pump — with enough margin for cloudy days and heavy-use weekends.
+
+[Use our Electrical Calculator →](https://emerycustombuilds.com/tools/electrical-calculator)
+
+[Talk to us about your electrical build →](https://emerycustombuilds.com/contact)

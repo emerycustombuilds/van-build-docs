@@ -1,0 +1,74 @@
+---
+title: "Electrical Systems Overview"
+sidebarTitle: "Overview"
+description: "How van electrical systems work — 12-volt basics, system components, and what you actually need for off-grid living in a camper van."
+---
+
+# Van Electrical Systems Overview
+
+The electrical system is the backbone of any van conversion. It powers your lights, fridge, fans, water pump, phone charging, heater controls, and anything else that runs on electricity. Getting it right means reliable off-grid living. Getting it wrong means dead batteries, blown fuses, and a frustrating experience.
+
+## 12-Volt vs. 120-Volt (Shore Power)
+
+Most van electrical systems run on **12-volt DC power**, which is the same voltage your van's starter battery uses. This is your primary system — it runs directly off your house battery bank.
+
+Some builds also include a **120-volt AC inverter**, which converts 12V DC to standard household power. You'd use this for things like a blender, laptop charger, or any device that plugs into a normal wall outlet. Not every build needs one, but most Standard and Premium builds include an inverter.
+
+**Shore power** (also called "plug-in power") lets you connect to an external 120V source at a campground or your house. A shore power hookup charges your batteries and can power AC devices directly. It's a nice-to-have, especially if you're not fully committed to off-grid.
+
+## Core Components
+
+Every van electrical system has these building blocks:
+
+### Battery Bank
+Your energy storage. Lithium (LiFePO4) batteries are the standard for quality builds — they're lighter, last longer, and handle deep discharge much better than lead-acid. A basic build might run a single 100Ah lithium battery. A premium build could have 400–600Ah or more.
+
+[Deep dive: Battery Bank Design →](/docs/electrical/battery-bank)
+
+### Solar Panels
+Your primary charging source when off-grid. Panels mount on the roof and feed power through a charge controller into your batteries. Panel sizing depends on your power consumption, climate, and roof space.
+
+[Deep dive: Solar Power Guide →](/docs/electrical/solar-guide)
+
+### Charge Controller
+Sits between your solar panels and batteries. It regulates the voltage and current coming from the panels to safely charge your batteries. MPPT controllers are more efficient than PWM — we use MPPT on all builds.
+
+### DC-DC Charger (Alternator Charging)
+Charges your house batteries from the van's alternator while you're driving. This is a major charging source, especially if you drive regularly. A good DC-DC charger like a Victron Orion can put 30–50 amps into your batteries while cruising.
+
+### Inverter
+Converts 12V DC to 120V AC. Sizes range from 1000W (basic) to 3000W+ (premium). Bigger inverters can run larger appliances, but they also draw more power and cost more. Size it for what you'll actually use.
+
+### Wiring, Fuses & Distribution
+The nervous system connecting everything. Proper wire sizing, fusing, and bus bar distribution are critical safety items. Undersized wiring is a fire hazard. Every circuit should be individually fused.
+
+## System Sizing by Build Tier
+
+| Component | Basic ($2.5K–$5K) | Standard ($6K–$12K) | Premium ($12K–$20K) |
+|-----------|-------------------|---------------------|---------------------|
+| Battery | 100–200Ah lithium | 200–400Ah lithium | 400–600Ah+ lithium |
+| Solar | 200–400W | 400–800W | 800–1200W+ |
+| Inverter | None or 1000W | 2000W | 3000W+ |
+| Shore Power | Optional | Included | Included |
+| DC-DC Charger | Basic | 30A | 50A+ |
+
+These are ranges — your actual spec depends on how you use the van and what appliances you're running.
+
+[Size your system: Electrical System Sizing →](/docs/electrical/system-sizing)
+
+## Common Mistakes
+
+These are the issues we see most often in DIY builds and cheap professional installs:
+
+- **Undersized wire gauge** — Using wire that's too thin for the current it carries. This creates heat, voltage drop, and fire risk.
+- **No fusing or wrong fuse sizes** — Every positive wire leaving a battery or bus bar needs a fuse. The fuse protects the wire, not the device.
+- **Poor grounding** — A bad ground connection causes intermittent failures, flickering lights, and weird behavior that's hard to diagnose.
+- **Mixing battery chemistries** — Don't mix lithium and lead-acid in the same bank. They have different charge profiles and will damage each other.
+- **Ignoring voltage drop** — Long wire runs (especially to the back of a Sprinter 170") lose voltage. Size up your wire or shorten the run.
+
+## Next Steps
+
+- [System Sizing Guide](/docs/electrical/system-sizing) — Calculate your actual power needs
+- [Solar Power Guide](/docs/electrical/solar-guide) — Size your solar array
+- [Battery Bank Design](/docs/electrical/battery-bank) — Choose the right battery setup
+- [Get a quote for a custom electrical system →](https://emerycustombuilds.com/contact)

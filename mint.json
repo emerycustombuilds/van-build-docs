@@ -74,6 +74,64 @@
   "metadata": {
     "google-site-verification": "k7fdwSKSzeTbibtBlfjwsiqut4nSXb_DpnfdQlkoIVU"
   },
+  "redirects": [
+    {
+      "source": "/docs/introduction",
+      "destination": "https://emerycustombuilds.com/systems/"
+    },
+    {
+      "source": "/docs/getting-started",
+      "destination": "https://emerycustombuilds.com/systems/"
+    },
+    {
+      "source": "/docs/electrical/overview",
+      "destination": "https://emerycustombuilds.com/systems/electrical/"
+    },
+    {
+      "source": "/docs/electrical/system-sizing",
+      "destination": "https://emerycustombuilds.com/systems/electrical/battery-sizing/"
+    },
+    {
+      "source": "/docs/electrical/solar-guide",
+      "destination": "https://emerycustombuilds.com/systems/electrical/solar/"
+    },
+    {
+      "source": "/docs/electrical/battery-bank",
+      "destination": "https://emerycustombuilds.com/systems/electrical/lithium-battery-guide/"
+    },
+    {
+      "source": "/docs/plumbing/overview",
+      "destination": "https://emerycustombuilds.com/systems/plumbing/"
+    },
+    {
+      "source": "/docs/plumbing/water-systems",
+      "destination": "https://emerycustombuilds.com/systems/plumbing/freshwater/"
+    },
+    {
+      "source": "/docs/plumbing/sizing",
+      "destination": "https://emerycustombuilds.com/systems/plumbing/freshwater/"
+    },
+    {
+      "source": "/docs/build-process/overview",
+      "destination": "https://emerycustombuilds.com/our-process/"
+    },
+    {
+      "source": "/docs/build-process/budgeting",
+      "destination": "https://emerycustombuilds.com/van-conversion-cost-guide/"
+    },
+    {
+      "source": "/docs/build-process/timeline",
+      "destination": "https://emerycustombuilds.com/our-process/"
+    },
+    {
+      "source": "/docs/tools/electrical-calculator",
+      "destination": "https://emerycustombuilds.com/tools/solar-calculator/"
+    },
+    {
+      "source": "/docs/:slug*",
+      "destination": "https://emerycustombuilds.com/systems/"
+    }
+  ],
   "footerSocials": {
     "instagram": "https://www.instagram.com/emerycustombuilds/",
     "facebook": "https://www.facebook.com/EmeryCustomBuilds",
